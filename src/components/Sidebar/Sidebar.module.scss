@@ -1,0 +1,126 @@
+@import "@/assets/styles/variables.scss";
+
+.sidebar {
+  width: 259px;
+  background-color: #f4f6f9;
+  height: 100vh;
+  position: fixed; /* Ensure the sidebar stays fixed */
+  top: 0;
+  left: 0;
+  z-index: 1200; /* Keep the sidebar below the AppBar */
+  transition: transform 0.3s ease;
+}
+.mainContainer {
+  .logoName {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 800;
+    text-align: center;
+    color: $primaryColor;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+
+  .sidebar {
+    background-color: $colorwhite;
+
+    .MuiDrawer-paper {
+      background-color: $colorwhite;
+      color: #333;
+      padding-top: 20px;
+    }
+  }
+
+  .icon {
+    min-width: 30px !important;
+  }
+
+  .pleft30 {
+    padding-left: 30px;
+  }
+
+  .menuTitle {
+    line-height: 21px;
+    font-size: 14px;
+    font-weight: 400;
+    color: $secondaryColor;
+    // margin-bottom: 10px;
+  }
+
+  .activeMenuTitle {
+    font-size: 16px;
+    font-weight: 400;
+    color: $primaryColor;
+  }
+
+  .menuName {
+    margin-top: 10px;
+  }
+
+  .pleft {
+    position: relative;
+    padding-left: 40px; /* Space for the left border */
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 6px;
+      background-color: transparent;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      transition: background-color 0.3s ease;
+    }
+  }
+
+  .activeMenu::before {
+    background-color: $primaryColor;
+  }
+
+  .menuItem {
+    font-size: 15px;
+    font-weight: 400;
+    color: $secondaryColor;
+    line-height: 22.5px;
+  }
+
+  .subMenuPill {
+    padding-left: 30px;
+  }
+
+  .listItem {
+    &:hover {
+      background-color: transparent !important;
+    }
+  }
+
+  .activeSubMenu {
+    // margin-top: 10px !important;
+    max-width: 214px;
+    background-color: $primaryColor;
+    // padding-left: 40px;
+    color: $colorwhite;
+    border-radius: 6px;
+    padding: 9px;
+    margin: 0;
+
+    &:hover {
+      color: $colorwhite;
+      background-color: $primaryColor !important;
+    }
+  }
+
+  .MuiListItem-root {
+    padding: 10px 16px;
+  }
+
+  .MuiListItemIcon-root {
+    color: inherit;
+  }
+
+  .MuiListItemText-root {
+    font-size: 14px;
+  }
+}

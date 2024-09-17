@@ -1,0 +1,45 @@
+@import "./variables"; // colors, spacing, typography, etc.
+
+/* src/styles/global.scss */
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app-container {
+  display: flex;
+}
+
+/* Main content area adapts based on sidebar visibility */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  transition: margin-left 0.3s ease;
+
+  &.sidebar-open {
+    margin-left: 259px; /* When the sidebar is visible, push the content */
+    .MuiPaper-root {
+      width: calc(100% - 259px);
+      box-shadow: none;
+    }
+  }
+
+  &.sidebar-closed {
+    margin-left: 0; /* When sidebar is hidden, content takes full width */
+  }
+}
+
+/* Content area under the Topbar */
+.content-area {
+  // padding: 20px;
+  margin-top: 64px; /* Offset for the Topbar height */
+}
+
+/* Global reset */
+* {
+  box-sizing: border-box;
+}

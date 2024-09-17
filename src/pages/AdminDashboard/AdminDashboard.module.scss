@@ -1,0 +1,55 @@
+@import "@/assets/styles/variables.scss";
+
+.dashboardContainer {
+  padding: 20px;
+  background-color: $gray3;
+
+  //   @media (max-width: 600px) {
+  //     padding: 10px;
+  //   }
+}
+
+.welcomeContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+
+  @media (max-width: 660px) {
+    margin-top: 30px !important;
+  }
+}
+
+.welcomeText {
+  font-size: 22px;
+  line-height: 16.8px;
+  font-weight: 400;
+  color: $black3;
+}
+
+.breadcrumbContainer {
+  display: flex;
+  justify-content: flex-end;
+
+  .MuiBreadcrumbs-root {
+    font-size: 14px;
+    color: $black2;
+  }
+
+  a {
+    color: $black2;
+    font-weight: 500;
+  }
+
+  .MuiTypography-root {
+    font-weight: bold;
+    color: $secondaryColor;
+  }
+}
+
+.socialMedia {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,35 @@
+@import "@/assets/styles/variables.scss";
+.statBox {
+  background-color: white;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .title {
+    color: $gray4;
+    font-size: 14px;
+    line-height: 16.8px;
+    font-weight: 400;
+  }
+
+  .value {
+    color: $black;
+    font-size: 22px;
+    line-height: 26.4px;
+    font-weight: 600;
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+
+    .icon {
+      font-size: 30px;
+      margin-left: 10px;
+      color: #8884d8;
+    }
+  }
+}

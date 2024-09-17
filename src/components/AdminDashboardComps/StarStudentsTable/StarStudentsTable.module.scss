@@ -1,0 +1,62 @@
+@import "@/assets/styles/variables.scss";
+.starStudentsTable {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  .MuiPaper-root {
+    width: 100% !important;
+  }
+  .chartHeaderBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    .title {
+      font-size: 18px;
+      line-height: 21.6px;
+      font-weight: 600;
+      color: $black;
+    }
+
+    .rightBox {
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+      .dotBox {
+        background-color: #f4f4f4;
+        padding: 4px;
+        border-radius: 4px;
+        .dots {
+        }
+      }
+    }
+  }
+
+  .MuiTableCell-root {
+    padding: 12px;
+    font-size: 14px;
+    color: #333;
+  }
+
+  .MuiTableHead-root {
+    .MuiTableCell-root {
+      font-weight: bold;
+      color: #888;
+    }
+  }
+
+  .MuiTableBody-root {
+    .MuiTableRow-root {
+      &:nth-of-type(odd) {
+        background-color: #f9f9f9;
+      }
+    }
+  }
+
+  .username {
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+  }
+}

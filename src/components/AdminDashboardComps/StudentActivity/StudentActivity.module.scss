@@ -1,0 +1,99 @@
+@import "@/assets/styles/variables.scss";
+.studentActivityList {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  .chartHeaderBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    .title {
+      font-size: 18px;
+      line-height: 21.6px;
+      font-weight: 600;
+      color: $black;
+    }
+
+    .rightBox {
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+      .dotBox {
+        background-color: #f4f4f4;
+        padding: 4px;
+        border-radius: 4px;
+        .dots {
+        }
+      }
+    }
+  }
+
+  .activityItem {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    align-items: center;
+
+    .activityTitle {
+      font-size: 14px;
+      font-weight: 600;
+      color: #333;
+    }
+
+    .activityDescription {
+      font-size: 12px;
+      color: #666;
+    }
+
+    .activityTime {
+      font-size: 12px;
+      color: #888;
+    }
+  }
+
+  .activityBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 17px;
+    &:first-child {
+      margin-top: 0px;
+    }
+
+    .leftBox {
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+
+      .title {
+        font-size: 14px;
+        line-height: 16.8px;
+        font-weight: 500;
+        color: #2c323f;
+      }
+
+      .des {
+        font-size: 12px;
+        line-height: 14.4px;
+        font-weight: 400;
+        color: #808191;
+      }
+    }
+
+    .rightBox {
+      background-color: #fff9ed;
+      padding: 3px 9px;
+      border-radius: 6px;
+      .timeStamp {
+        margin: 0;
+        font-size: 11px;
+        line-height: 16.5px;
+        font-weight: 400;
+        color: #808191;
+      }
+    }
+  }
+}
